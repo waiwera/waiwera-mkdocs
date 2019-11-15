@@ -1,0 +1,32 @@
+site_name: Waiwera
+theme:
+  name: 'material'
+  logo: 'img/waiwera_logo.png'
+  favicon: 'img/waiwera_logo.png'
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/waiwera/waiwera'
+
+nav:
+  - 'Introduction': 'index.md'
+  - 'News': 'news.md'
+  - 'User guide': 'userguide.md'
+  - 'Installation': 'install.md'
+  - 'License': 'license.md'
+  - 'Issues': 'issues.md'
+  - 'Contributing': 'contrib.md'
+  - 'Publications': 'pubs.md'
+
+site_description: "Waiwera parallel open-source geothermal flow simulator"
+
+repo_url: https://github.com/waiwera/waiwera
+edit_uri: ""
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
