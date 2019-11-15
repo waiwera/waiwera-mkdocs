@@ -1,2 +1,2 @@
 # waiwera-mkdocs
-mkdocs source for website
+mkdocs source for https://waiwera.github.io/ website
