@@ -1,6 +1,7 @@
 # User guide
 
 The online Waiwera user guide can be found on its
-[readthedocs](https://waiwera.readthedocs.io) page.
+[Read The Docs page](https://waiwera.readthedocs.io).
 
-*Plus downloadable PDF*
+A PDF version may be downloaded
+[here](https://buildmedia.readthedocs.org/media/pdf/waiwera/latest/waiwera.pdf).
