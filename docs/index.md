@@ -1,4 +1,4 @@
-# ![waiwera logo](img/waiwera_logo_text.svg)
+# ![waiwera logo](img/waiwera_logo_text.png)
 
 ***a parallel, open-source geothermal flow simulator***
 
