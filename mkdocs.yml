@@ -2,7 +2,7 @@ site_name: Waiwera
 theme:
   name: 'material'
   logo: 'img/waiwera_logo.png'
-  favicon: 'img/waiwera_logo.png'
+  favicon: 'img/waiwera.ico'
 extra:
   social:
     - type: 'github'
