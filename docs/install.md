@@ -24,10 +24,11 @@ distributions
 [Debian](https://docs.docker.com/install/linux/docker-ce/debian/)).
 
 The easiest way to run Waiwera is then to use the supplied
-`waiwera-dkr.py` Python script, which handles installing and updating
-the Waiwera Docker container image, running Waiwera in the container,
-and managing the sharing of files between the container and your
-simulation directory.
+[waiwera-dkr.py](https://raw.githubusercontent.com/waiwera/waiwera/master/waiwera-dkr.py)
+Python script, which handles installing and updating the Waiwera
+Docker container image, running Waiwera in the container, and managing
+the sharing of files between the container and your simulation
+directory.
 
 ## Native Linux build
 
