@@ -26,7 +26,7 @@ used, but this is less convenient and has a higher performance
 overhead than Docker Desktop.
 
 Similarly, users of macOS version 10.13 or later can use Docker
-Desktop, but users of older versions can user Docker Toolbox.
+Desktop, but users of older versions can use Docker Toolbox.
 
 Linux users can install Docker from their package management system.
 
