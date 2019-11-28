@@ -15,13 +15,22 @@ When using [Docker](https://www.docker.com/), Waiwera is run in a
 "container" holding the code and all its dependencies, isolated from
 the host machine, so that it should always run the same way.
 
-First, Docker itself needs to be installed. The Docker documentation
-has instructions on how to install it on
-[Windows](https://docs.docker.com/docker-for-windows/install/), [Mac
-OS](https://docs.docker.com/docker-for-mac/install/) and various Linux
-distributions
-(e.g. [Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/),
-[Debian](https://docs.docker.com/install/linux/docker-ce/debian/)).
+First, Docker itself needs to be installed.
+
+### Installing Docker
+
+For Windows users, the Windows 10 Pro, Enterprise or Education
+versions are recommended, in which case **Docker Desktop** can be
+used. For other Windows versions, the older **Docker Toolbox** can be
+used, but this is less convenient and has a higher performance
+overhead than Docker Desktop.
+
+Similarly, users of macOS version 10.13 or later can use Docker
+Desktop, but users of older versions can user Docker Toolbox.
+
+Linux users can install Docker from their package management system.
+
+### Running using Docker
 
 The easiest way to run Waiwera is then to use the supplied
 `waiwera-dkr.py` Python script, which handles installing and updating
