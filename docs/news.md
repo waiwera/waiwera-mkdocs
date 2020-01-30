@@ -1,5 +1,35 @@
 # What's new?
 
+## Waiwera 1.1 released
+
+**30 January 2020** - Waiwera version 1.1 is now released. This is a significant update and includes the following changes:
+
+- **MINC mesh rebalancing**: after MINC processing, the mesh is
+  redistributed to regain optimal load balancing, and hence better
+  scaling behaviour for large parallel MINC problems. This entailed a
+  substantial rewrite of parts of the Waiwera MINC code.
+- **PETSc update**: PETSc version 3.12 or later is now required (some
+  of its new features and bugfixes are needed for the MINC mesh
+  rebalancing). If PETSc is not found on the system, version 3.12.3
+  will be downloaded and built.
+- **PyWaiwera**: this is a new Python library for working with Waiwera
+  simulations. Its source is in the main Waiwera source tree under
+  `/utils/pywaiwera`, and it can be installed from PyPI using
+  `pip`. For now, it contains only code related to running Waiwera via
+  Docker, either from Python scripts or from the command line, for
+  which it installs an executable `waiwera-dkr` script (which replaces
+  the previous `waiwera-dkr.py` script). In future it is invisaged
+  that other modules will be added to PyWaiwera, for assisting with
+  pre- and post-processing.
+- the new **`waiwera-dkr`** script includes many improvements and some
+  new features, for example downloading example model input files
+  using the `--examples` option.
+- **continuous integration** (CI) using [Travis](https://travis-ci.org/)
+  for automated building/testing of Waiwera.
+- additional **log file** messages for reporting simulation degrees of
+  freedom and imbalance statistics, as well as linear solver iteration
+  counts
+
 ## Waiwera 1.0 released
 
 **24 November 2019** - Waiwera version 1.0 has just been released, after five years of development and testing.

@@ -30,11 +30,16 @@ Desktop, but users of older versions can use Docker Toolbox.
 
 Linux users can install Docker from their package management system.
 
+### Installing PyWaiwera
+
+The easiest way to run Waiwera via Docker is by using the
+`waiwera-dkr` script, which is supplied as part of the
+[PyWaiwera](https://pypi.org/project/pywaiwera) Python library. This
+can be installed from the Python Package Index (PyPI) using `pip`.
+
 ### Running using Docker
 
-The easiest way to run Waiwera is then to use the supplied
-[waiwera-dkr.py](https://raw.githubusercontent.com/waiwera/waiwera/master/waiwera-dkr.py)
-Python script, which handles installing and updating the Waiwera
+The `waiwera-dkr` script handles installing and updating the Waiwera
 Docker container image, running Waiwera in the container, and managing
 the sharing of files between the container and your simulation
 directory.
