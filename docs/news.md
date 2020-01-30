@@ -2,7 +2,7 @@
 
 ## Waiwera 1.1 released
 
-**30 January 2020** - Waiwera version 1.1 is now released. This is a significant update and includes the following changes:
+**31 January 2020** - Waiwera version 1.1 is now released. This is a significant update and includes the following changes:
 
 - **MINC mesh rebalancing**: after MINC processing, the mesh is
   redistributed to regain optimal load balancing, and hence better
