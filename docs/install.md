@@ -44,7 +44,12 @@ machine. Then PyWaiwera can be installed from the Python Package Index
 The `waiwera-dkr` script handles installing and updating the Waiwera
 Docker container image, running Waiwera in the container, and managing
 the sharing of files between the container and your simulation
-directory.
+directory. For example:
+
+     waiwera-dkr -np 16 model.json
+
+uses Docker to run the model with JSON input file `model.json` on
+Waiwera, using 16 parallel processes.
 
 ## Native Linux build
 
