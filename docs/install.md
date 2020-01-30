@@ -34,9 +34,10 @@ Linux users can install Docker from their package management system.
 
 The easiest way to run Waiwera via Docker is by using the
 `waiwera-dkr` script, which is supplied as part of the
-[PyWaiwera](https://pypi.org/project/pywaiwera) Python library. This
-can be installed from the Python Package Index (PyPI) using `pip
-install pywaiwera`.
+[PyWaiwera](https://pypi.org/project/pywaiwera) Python library. You
+will need to have [Python](https://www.python.org/) installed on your
+machine. Then PyWaiwera can be installed from the Python Package Index
+(PyPI) using the `pip` package manager, e.g. `pip install pywaiwera`.
 
 ### Running using Docker
 
