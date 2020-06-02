@@ -15,20 +15,41 @@ When using [Docker](https://www.docker.com/), Waiwera is run in a
 "container" holding the code and all its dependencies, isolated from
 the host machine, so that it should always run the same way.
 
-First, Docker itself needs to be installed. The Docker documentation
-has instructions on how to install it on
-[Windows](https://docs.docker.com/docker-for-windows/install/), [Mac
-OS](https://docs.docker.com/docker-for-mac/install/) and various Linux
-distributions
-(e.g. [Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/),
-[Debian](https://docs.docker.com/install/linux/docker-ce/debian/)).
+First, Docker itself needs to be installed.
 
-The easiest way to run Waiwera is then to use the supplied
-[waiwera-dkr.py](https://raw.githubusercontent.com/waiwera/waiwera/master/waiwera-dkr.py)
-Python script, which handles installing and updating the Waiwera
+### Installing Docker
+
+For Windows users, the Windows 10 Pro, Enterprise or Education
+versions are recommended, in which case **Docker Desktop** can be
+used. For other Windows versions, the older **Docker Toolbox** can be
+used, but this is less convenient and has a higher performance
+overhead than Docker Desktop.
+
+Similarly, users of macOS version 10.13 or later can use Docker
+Desktop, but users of older versions can use Docker Toolbox.
+
+Linux users can install Docker from their package management system.
+
+### Installing PyWaiwera
+
+The easiest way to run Waiwera via Docker is by using the
+`waiwera-dkr` script, which is supplied as part of the
+[PyWaiwera](https://pypi.org/project/pywaiwera) Python library. You
+will need to have [Python](https://www.python.org/) installed on your
+machine. Then PyWaiwera can be installed from the Python Package Index
+(PyPI) using the `pip` package manager, e.g. `pip install pywaiwera`.
+
+### Running using Docker
+
+The `waiwera-dkr` script handles installing and updating the Waiwera
 Docker container image, running Waiwera in the container, and managing
 the sharing of files between the container and your simulation
-directory.
+directory. For example:
+
+     waiwera-dkr -np 16 model.json
+
+uses Docker to run the model with JSON input file `model.json` on
+Waiwera, using 16 parallel processes.
 
 ## Native Linux build
 
