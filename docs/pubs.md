@@ -6,6 +6,7 @@
 
 ## Conference papers
 
+- Croucher, A.E., O'Sullivan, M.J., O'Sullivan, J.P., Yeh, A., Burnell, J. and Kissling, W. (2019). *An update on the Waiwera geothermal flow simulator: development and applications*. [Proceedings](https://www.geothermal-energy.org/pdf/IGAstandard/NZGW/2019/042.pdf) of the 41<sup>st</sup> New Zealand Geothermal Workshop, Auckland, New Zealand.
 - O'Sullivan, J.P., Croucher, A.E., Yeh, A. and O'Sullivan, M.J. (2017). *Experiments with Waiwera, a new geothermal simulator*. [Proceedings](https://www.geothermal-energy.org/pdf/IGAstandard/NZGW/2017/087_OSullivan_Final.pdf) of the 39<sup>th</sup> New Zealand Geothermal Workshop, Rotorua, New Zealand.
 - Croucher, A.E., O'Sullivan, M.J., O'Sullivan, J.P., Pogacnik, J., Burnell, J. and Kissling, W. (2017). *Geothermal Supermodels project: an update on flow simulator development*. [Proceedings](https://www.geothermal-energy.org/pdf/IGAstandard/NZGW/2017/056_Croucher-Final.pdf) of the 39<sup>th</sup> New Zealand Geothermal Workshop, Rotorua, New Zealand.
 - Croucher, A.E., O'Sullivan, M.J., O'Sullivan, J.P., Pogacnik, J., Burnell, J. and Kissling, W. (2016). *Geothermal Supermodels project: an update on flow simulator development*. [Proceedings](https://www.geothermal-energy.org/pdf/IGAstandard/NZGW/2016/103_Croucher_Final.pdf) of the 38<sup>th</sup> New Zealand Geothermal Workshop, Auckland, New Zealand.
