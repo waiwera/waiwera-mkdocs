@@ -1,5 +1,16 @@
 # What's new?
 
+## Waiwera journal article published
+
+** 23 May 2020** - the journal Computers and Geosciences has just
+   published a [research
+   article](https://doi.org/10.1016/j.cageo.2020.104529) titled
+   **"Waiwera: a parallel open-source geothermal flow simulator"**.
+
+This contains details on why Waiwera was written, the governing
+   equations used, numerical formulation and other implementation
+   details, as well as results from various test problems.
+
 ## Waiwera 1.1 released
 
 **31 January 2020** - Waiwera version 1.1 is now released. This is a significant update and includes the following changes:
