@@ -1,5 +1,45 @@
 # What's new?
 
+## Waiwera 1.2 released
+
+**8 June 2020** - Waiwera version 1.2 is now released.
+
+The changes in this version include:
+
+- **PETSc update**: PETSc version 3.13.2 or later is now required, and
+    PETSc 3.13.2 will be downloaded and built if PETSc is not found on
+    the system.
+
+- this new version of PETSc includes substantial modifications to the
+    DMPlex class, including the ability to handle **hybrid meshes**
+    with arbitrary mixes of cell types (8-node hexahedron, 6-node
+    wedge, etc.). This means Waiwera is also now able to handle these
+    meshes.
+
+- a modification to the behaviour of the **deliverability** source
+  control when a threshold pressure is specified. The deliverability
+  control will now deactivate if the computed flow rate is larger in
+  magnitude than the specified production rate (which can happen for
+  time-dependent specified flow rates).
+
+- the Waiwera executable now has `--version` and `--help` **command
+  line arguments**. Running with no arguments now gives the more
+  common behaviour of printing the help information, rather than
+  prompting for a filename.
+
+- the Travis continuous integration (**CI**) pipeline now includes the
+  full suite of **benchmark tests** as well as just the unit tests.
+
+- users can now run the **benchmark tests** via **Docker**, by passing
+  the `--docker` argument to the benchmark test script.
+
+- Waiwera Docker images are now based on a **Debian 10** base image
+  (was Debian 9 in previous versions).
+
+- the `waiwera-dkr` utility now has `--version` and revised `--help`
+  arguments, and its default number of parallel processes is now 1
+  (rather than the maximum available).
+
 ## Waiwera journal article published
 
 ** 23 May 2020** - the journal Computers and Geosciences has just
