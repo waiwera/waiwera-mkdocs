@@ -1,5 +1,25 @@
 # What's new?
 
+## Waiwera 1.2.1 released
+
+**20 July 2020** - Waiwera version 1.2.1 is now released.
+
+The main change in this version is that the installation process will
+now install [MPICH](https://www.mpich.org/) instead of
+[OpenMPI](https://www.open-mpi.org/), if it does not detect any
+existing MPI on the system.
+
+This change was prompted by an apparent memory leak (possibly [this
+one](https://github.com/open-mpi/ompi/issues/4567)) in some versions
+of OpenMPI, including version 3.1.3 which was used in the Waiwera 1.2
+Docker image.
+
+That version of OpenMPI also has [another
+bug](https://github.com/open-mpi/ompi/issues/4948) which causes error
+messages when running in Docker containers. Waiwera 1.2 introduced a
+workaround for this bug in the `waiwera-dkr` script, but with the
+change to MPICH this is no longer needed, and has now been removed.
+
 ## Waiwera 1.2 released
 
 **8 June 2020** - Waiwera version 1.2 is now released.
