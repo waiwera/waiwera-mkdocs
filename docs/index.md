@@ -4,7 +4,9 @@
 
 ![geothermal model](img/model.jpg)
 
-Waiwera features:
+**What's new?** see the [news](news.md) page.
+
+**Waiwera features**:
 
 - numerical simulation of high-temperature subsurface flows, including robust phase changes
 - parallel execution on shared- or distributed-memory computers and clusters
