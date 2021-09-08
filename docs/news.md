@@ -1,5 +1,51 @@
 # What's new?
 
+## Waiwera 1.3.0 released
+
+**8 September 2021** - Waiwera version 1.3.0 is now released.
+
+The changes in this version include:
+
+- **tracers** - Waiwera can now simulate passive tracers. Any number
+  of tracers can be simulated, in conjunction with any equation of
+  state. Tracers may be either liquid-phase or vapour-phase, and the
+  effects of diffusion and decay can be included. Decay can be
+  constant or temperature-dependent. The tracer equations are solved
+  independently of the flow equations, with only one additional linear
+  solve needed per time step.
+
+- **output at faces** - Waiwera can now optionally output results on
+  mesh faces, e.g. component or phase mass or energy fluxes, and also
+  face geometry (areas etc.) to the output HDF5 file. Face output is
+  fully configurable by the user. It is also now possible to control
+  (e.g. omit) the output of cell geometry data.
+
+- **PETSc update** - PETSc version 3.15.2 or later is now required,
+  and PETSc 3.15.4 will be downloaded and built if PETSc is not found
+  on the system.
+
+- new output datasets in the HDF5 file to simplify post-processing
+  **MINC** simulations - these contain the MINC level and parent cell
+  index for each cell in the output
+
+- the Waiwera **Docker** images should now run on older
+  CPUs. Previously the Docker images contained a PETSc library built
+  using compiler settings which prevented it from running on older
+  CPUs. This is now built using more generic settings so it should run
+  on any x86 CPU capable of running Docker.
+
+- a fix for a minor issue which prevented **native Linux builds** on
+  distributions which no longer have Python 2 installed by default
+  (e.g. Ubuntu 20.04)
+
+- the user guide has new material on using the recently-released
+  [Layermesh](https://github.com/acroucher/layermesh) library to
+  create meshes for Waiwera models, and use them for pre- and
+  post-processing
+
+- the Waiwera **continuous integration** (CI) pipeline has been
+  transferred from Travis CI to Github Actions
+
 ## Waiwera 1.2.1 released
 
 **20 July 2020** - Waiwera version 1.2.1 is now released.
