@@ -1,5 +1,33 @@
 # What's new?
 
+## Waiwera 1.3.1 released
+
+**29 June 2022** - Waiwera version 1.3.1 is now released.
+
+The changes in this version include:
+
+- **time-dependent rock properties** - rock permeabilities and
+  porosities can now be assigned prescribed time-dependent values.
+
+- modified handling of **Dirichlet boundary conditions** - equations
+  for boundary ghost cells are no longer included in the Jacobian
+  matrix (used to solve the non-linear flow equations at each time
+  step). This makes the Jacobian significantly less ill-conditioned
+  and slightly smaller.
+
+- **Jacobian output** - Jacobian matrices can now be optionally output
+  to a binary file. These may be used e.g. for inverse modelling or
+  uncertainty quantification.
+- added ability to set Jacobian **differencing parameters** in input
+  (rather than as PETSc arguments).
+
+- Modified time stepping behaviour around **checkpoints** - the
+  pre-checkpoint time step size is now restored after hitting a
+  checkpoint.
+
+- **PETSc update** - PETSc version 3.15.5 will be downloaded and built
+  if PETSc is not found on the system.
+
 ## Waiwera 1.3.0 released
 
 **8 September 2021** - Waiwera version 1.3.0 is now released.
