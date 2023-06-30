@@ -1,5 +1,32 @@
 # What's new?
 
+## Waiwera 1.4.0 released
+
+**30 June 2023** - Waiwera version 1.4.0 is now released.
+
+The changes in this version include:
+
+- **source networks**, representing interacting networks of sources
+  and sinks, for modelling e.g. multi-feed wells, borefields with
+  grouped production wells (and optional limits or targets imposed on
+  the group), or reinjection
+
+- **salt equation of state modules** - Waiwera now includes three new
+  EOS modules for modelling mixtures of non-isothermal water, salt
+  (sodium chloride) and non-condensible gases (currently carbon
+  dioxide or air). These new EOS modules are `wse` (water, salt,
+  energy), `wsae` (water, salt, air, energy) and `wsce` (water, salt,
+  carbon dioxide, energy).
+
+- allowing sources with no associated cell (e.g. for reinjection outside
+  the model)
+
+- allowing unlimited number of time steps (by setting
+  `time.step.maximum.number` to `null`)
+
+- various minor code modifications to allow building Waiwera using
+  newer versions (10, 11) of `gfortran`
+
 ## Waiwera 1.3.1 released
 
 **29 June 2022** - Waiwera version 1.3.1 is now released.
