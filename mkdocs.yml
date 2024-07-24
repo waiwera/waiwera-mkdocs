@@ -13,7 +13,7 @@ extra:
 
 nav:
   - 'Introduction': 'index.md'
-  - "What's new?": 'news.md'
+  - 'Releases': 'releases.md'
   - 'User guide': 'userguide.md'
   - 'Installation': 'install.md'
   - 'License': 'license.md'

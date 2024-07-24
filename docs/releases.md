@@ -1,10 +1,19 @@
-# What's new?
+# Waiwera releases
 
-## Waiwera 1.4.0 released
+## 1.5.0
+**Date**: 1 August 2024
 
-**30 June 2023** - Waiwera version 1.4.0 is now released.
+**Changes**:
 
-The changes in this version include:
+- **PETSc update** - PETSc version 3.21.4 or later is now required,
+  and PETSc 3.21.4 will be downloaded and built if PETSc is not found
+  on the system.
+
+## 1.4.0
+
+Date: **30 June 2023**
+
+**Changes**:
 
 - **source networks**, representing interacting networks of sources
   and sinks, for modelling e.g. multi-feed wells, borefields with
@@ -27,11 +36,11 @@ The changes in this version include:
 - various minor code modifications to allow building Waiwera using
   newer versions (10, 11) of `gfortran`
 
-## Waiwera 1.3.1 released
+## 1.3.1
 
-**29 June 2022** - Waiwera version 1.3.1 is now released.
+**Date**: 29 June 2022
 
-The changes in this version include:
+**Changes**:
 
 - **time-dependent rock properties** - rock permeabilities and
   porosities can now be assigned prescribed time-dependent values.
@@ -55,11 +64,11 @@ The changes in this version include:
 - **PETSc update** - PETSc version 3.15.5 will be downloaded and built
   if PETSc is not found on the system.
 
-## Waiwera 1.3.0 released
+## 1.3.0
 
-**8 September 2021** - Waiwera version 1.3.0 is now released.
+**Date**: 8 September 2021
 
-The changes in this version include:
+**Changes**:
 
 - **tracers** - Waiwera can now simulate passive tracers. Any number
   of tracers can be simulated, in conjunction with any equation of
@@ -101,9 +110,9 @@ The changes in this version include:
 - the Waiwera **continuous integration** (CI) pipeline has been
   transferred from Travis CI to Github Actions
 
-## Waiwera 1.2.1 released
+## 1.2.1
 
-**20 July 2020** - Waiwera version 1.2.1 is now released.
+**Date**: 20 July 2020
 
 The main change in this version is that the installation process will
 now install [MPICH](https://www.mpich.org/) instead of
@@ -121,11 +130,11 @@ messages when running in Docker containers. Waiwera 1.2 introduced a
 workaround for this bug in the `waiwera-dkr` script, but with the
 change to MPICH this is no longer needed, and has now been removed.
 
-## Waiwera 1.2 released
+## 1.2.0
 
-**8 June 2020** - Waiwera version 1.2 is now released.
+**Date**: 8 June 2020
 
-The changes in this version include:
+**Changes**:
 
 - **PETSc update**: PETSc version 3.13.2 or later is now required, and
     PETSc 3.13.2 will be downloaded and built if PETSc is not found on
@@ -161,20 +170,11 @@ The changes in this version include:
   arguments, and its default number of parallel processes is now 1
   (rather than the maximum available).
 
-## Waiwera journal article published
+## 1.1.0
 
-** 23 May 2020** - the journal Computers and Geosciences has just
-   published a [research
-   article](https://doi.org/10.1016/j.cageo.2020.104529) titled
-   **"Waiwera: a parallel open-source geothermal flow simulator"**.
+**Date**: 31 January 2020
 
-This contains details on why Waiwera was written, the governing
-   equations used, numerical formulation and other implementation
-   details, as well as results from various test problems.
-
-## Waiwera 1.1 released
-
-**31 January 2020** - Waiwera version 1.1 is now released. This is a significant update and includes the following changes:
+**Changes**:
 
 - **MINC mesh rebalancing**: after MINC processing, the mesh is
   redistributed to regain optimal load balancing, and hence better
@@ -202,8 +202,10 @@ This contains details on why Waiwera was written, the governing
   freedom and imbalance statistics, as well as linear solver iteration
   counts
 
-## Waiwera 1.0 released
+## 1.0.0
 
-**24 November 2019** - Waiwera version 1.0 has just been released, after five years of development and testing.
+**Date**: 24 November 2019
+
+Waiwera version 1.0 has just been released, after five years of development and testing.
 
 The Waiwera team would like to thank everyone who contributed to making this possible, including [MBIE](https://www.mbie.govt.nz/) and [Contact Energy](https://contact.co.nz/) for financial support; Matt Knepley and others on the [PETSc](https://www.mcs.anl.gov/petsc/) team, for invaluable advice and support; and [Joseph Levin](https://github.com/josephalevin) for developing the [FSON](https://github.com/josephalevin/fson) library.
