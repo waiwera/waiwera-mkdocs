@@ -5,9 +5,29 @@
 
 **Changes**:
 
+- improved non-linear solver convergence and time-stepping behaviour
+  when using **source networks** (from modifications to the Jacobian
+  matrix)
+- improved handling of deliverability **thresholds**
+- new option for reading simulation **start time** (`time.start`) from
+  initial conditions HDF5 file
+- new option for setting negative `initial.index`, e.g. -1 to **start
+  from last set of results** in initial conditions HDF5 file
+- **initial conditions filename** added to YAML logfile summary info
+- new option for **flushing** of output HDF5 file
+- added **piecewise cubic Hermite** (PCHIP) option for interpolation
+  tables
+- allow selection of **mesh partitioner** type
+- an error is now raised if progressive scaling is used with a source
+  network **group separator**
+- **Docker image** updated to use a Debian 12 base image and Python 3
 - **PETSc update** - PETSc version 3.21.4 or later is now required,
   and PETSc 3.21.4 will be downloaded and built if PETSc is not found
-  on the system.
+  on the system (some changes to the Waiwera code were required to
+  accommodate changes made to PETSc since version 3.15)
+- revamped **user guide** based on the Shibuya Sphinx theme
+- updated **PyWaiwera** Python packaging using `pyproject.toml`
+  configuration file
 
 ## 1.4.0
 
