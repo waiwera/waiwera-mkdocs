@@ -2,8 +2,6 @@
 
 ***a parallel, open-source geothermal flow simulator***
 
-**What's new?** see the [news](news.md) page.
-
 **Waiwera features**:
 
 - numerical simulation of high-temperature subsurface flows, including robust phase changes
