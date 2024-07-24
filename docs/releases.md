@@ -13,6 +13,7 @@
   initial conditions HDF5 file
 - new option for setting negative `initial.index`, e.g. -1 to **start
   from last set of results** in initial conditions HDF5 file
+  (**note**: this is now the default)
 - **initial conditions filename** added to YAML logfile summary info
 - new option for **flushing** of output HDF5 file
 - added **piecewise cubic Hermite** (PCHIP) option for interpolation
