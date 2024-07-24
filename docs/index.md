@@ -2,8 +2,6 @@
 
 ***a parallel, open-source geothermal flow simulator***
 
-![geothermal model](img/model.jpg)
-
 **What's new?** see the [news](news.md) page.
 
 **Waiwera features**:
