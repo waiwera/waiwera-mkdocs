@@ -1,0 +1,885 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Waiwera parallel open-source geothermal flow simulator">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../userguide/">
+      
+      
+      <link rel="icon" href="../img/waiwera.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30">
+    
+    
+      
+        <title>News - Waiwera</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#whats-new" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Waiwera" class="md-header__button md-logo" aria-label="Waiwera" data-md-component="logo">
+      
+  <img src="../img/waiwera_logo_square.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Waiwera
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              News
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/waiwera/waiwera" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Waiwera" class="md-nav__button md-logo" aria-label="Waiwera" data-md-component="logo">
+      
+  <img src="../img/waiwera_logo_square.png" alt="logo">
+
+    </a>
+    Waiwera
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/waiwera/waiwera" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    News
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    News
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#waiwera-140-released" class="md-nav__link">
+    <span class="md-ellipsis">
+      Waiwera 1.4.0 released
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waiwera-131-released" class="md-nav__link">
+    <span class="md-ellipsis">
+      Waiwera 1.3.1 released
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waiwera-130-released" class="md-nav__link">
+    <span class="md-ellipsis">
+      Waiwera 1.3.0 released
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waiwera-121-released" class="md-nav__link">
+    <span class="md-ellipsis">
+      Waiwera 1.2.1 released
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waiwera-12-released" class="md-nav__link">
+    <span class="md-ellipsis">
+      Waiwera 1.2 released
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waiwera-journal-article-published" class="md-nav__link">
+    <span class="md-ellipsis">
+      Waiwera journal article published
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waiwera-11-released" class="md-nav__link">
+    <span class="md-ellipsis">
+      Waiwera 1.1 released
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waiwera-10-released" class="md-nav__link">
+    <span class="md-ellipsis">
+      Waiwera 1.0 released
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../userguide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Issues
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contrib/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pubs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Publications
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#waiwera-140-released" class="md-nav__link">
+    <span class="md-ellipsis">
+      Waiwera 1.4.0 released
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waiwera-131-released" class="md-nav__link">
+    <span class="md-ellipsis">
+      Waiwera 1.3.1 released
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waiwera-130-released" class="md-nav__link">
+    <span class="md-ellipsis">
+      Waiwera 1.3.0 released
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waiwera-121-released" class="md-nav__link">
+    <span class="md-ellipsis">
+      Waiwera 1.2.1 released
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waiwera-12-released" class="md-nav__link">
+    <span class="md-ellipsis">
+      Waiwera 1.2 released
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waiwera-journal-article-published" class="md-nav__link">
+    <span class="md-ellipsis">
+      Waiwera journal article published
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waiwera-11-released" class="md-nav__link">
+    <span class="md-ellipsis">
+      Waiwera 1.1 released
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waiwera-10-released" class="md-nav__link">
+    <span class="md-ellipsis">
+      Waiwera 1.0 released
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="whats-new">What's new?<a class="headerlink" href="#whats-new" title="Permanent link">&para;</a></h1>
+<h2 id="waiwera-140-released">Waiwera 1.4.0 released<a class="headerlink" href="#waiwera-140-released" title="Permanent link">&para;</a></h2>
+<p><strong>30 June 2023</strong> - Waiwera version 1.4.0 is now released.</p>
+<p>The changes in this version include:</p>
+<ul>
+<li>
+<p><strong>source networks</strong>, representing interacting networks of sources
+  and sinks, for modelling e.g. multi-feed wells, borefields with
+  grouped production wells (and optional limits or targets imposed on
+  the group), or reinjection</p>
+</li>
+<li>
+<p><strong>salt equation of state modules</strong> - Waiwera now includes three new
+  EOS modules for modelling mixtures of non-isothermal water, salt
+  (sodium chloride) and non-condensible gases (currently carbon
+  dioxide or air). These new EOS modules are <code>wse</code> (water, salt,
+  energy), <code>wsae</code> (water, salt, air, energy) and <code>wsce</code> (water, salt,
+  carbon dioxide, energy).</p>
+</li>
+<li>
+<p>allowing sources with no associated cell (e.g. for reinjection outside
+  the model)</p>
+</li>
+<li>
+<p>allowing unlimited number of time steps (by setting
+  <code>time.step.maximum.number</code> to <code>null</code>)</p>
+</li>
+<li>
+<p>various minor code modifications to allow building Waiwera using
+  newer versions (10, 11) of <code>gfortran</code></p>
+</li>
+</ul>
+<h2 id="waiwera-131-released">Waiwera 1.3.1 released<a class="headerlink" href="#waiwera-131-released" title="Permanent link">&para;</a></h2>
+<p><strong>29 June 2022</strong> - Waiwera version 1.3.1 is now released.</p>
+<p>The changes in this version include:</p>
+<ul>
+<li>
+<p><strong>time-dependent rock properties</strong> - rock permeabilities and
+  porosities can now be assigned prescribed time-dependent values.</p>
+</li>
+<li>
+<p>modified handling of <strong>Dirichlet boundary conditions</strong> - equations
+  for boundary ghost cells are no longer included in the Jacobian
+  matrix (used to solve the non-linear flow equations at each time
+  step). This makes the Jacobian significantly less ill-conditioned
+  and slightly smaller.</p>
+</li>
+<li>
+<p><strong>Jacobian output</strong> - Jacobian matrices can now be optionally output
+  to a binary file. These may be used e.g. for inverse modelling or
+  uncertainty quantification.</p>
+</li>
+<li>
+<p>added ability to set Jacobian <strong>differencing parameters</strong> in input
+  (rather than as PETSc arguments).</p>
+</li>
+<li>
+<p>Modified time stepping behaviour around <strong>checkpoints</strong> - the
+  pre-checkpoint time step size is now restored after hitting a
+  checkpoint.</p>
+</li>
+<li>
+<p><strong>PETSc update</strong> - PETSc version 3.15.5 will be downloaded and built
+  if PETSc is not found on the system.</p>
+</li>
+</ul>
+<h2 id="waiwera-130-released">Waiwera 1.3.0 released<a class="headerlink" href="#waiwera-130-released" title="Permanent link">&para;</a></h2>
+<p><strong>8 September 2021</strong> - Waiwera version 1.3.0 is now released.</p>
+<p>The changes in this version include:</p>
+<ul>
+<li>
+<p><strong>tracers</strong> - Waiwera can now simulate passive tracers. Any number
+  of tracers can be simulated, in conjunction with any equation of
+  state. Tracers may be either liquid-phase or vapour-phase, and the
+  effects of diffusion and decay can be included. Decay can be
+  constant or temperature-dependent. The tracer equations are solved
+  independently of the flow equations, with only one additional linear
+  solve needed per time step.</p>
+</li>
+<li>
+<p><strong>output at faces</strong> - Waiwera can now optionally output results on
+  mesh faces, e.g. component or phase mass or energy fluxes, and also
+  face geometry (areas etc.) to the output HDF5 file. Face output is
+  fully configurable by the user. It is also now possible to control
+  (e.g. omit) the output of cell geometry data.</p>
+</li>
+<li>
+<p><strong>PETSc update</strong> - PETSc version 3.15.2 or later is now required,
+  and PETSc 3.15.4 will be downloaded and built if PETSc is not found
+  on the system.</p>
+</li>
+<li>
+<p>new output datasets in the HDF5 file to simplify post-processing
+  <strong>MINC</strong> simulations - these contain the MINC level and parent cell
+  index for each cell in the output</p>
+</li>
+<li>
+<p>the Waiwera <strong>Docker</strong> images should now run on older
+  CPUs. Previously the Docker images contained a PETSc library built
+  using compiler settings which prevented it from running on older
+  CPUs. This is now built using more generic settings so it should run
+  on any x86 CPU capable of running Docker.</p>
+</li>
+<li>
+<p>a fix for a minor issue which prevented <strong>native Linux builds</strong> on
+  distributions which no longer have Python 2 installed by default
+  (e.g. Ubuntu 20.04)</p>
+</li>
+<li>
+<p>the user guide has new material on using the recently-released
+  <a href="https://github.com/acroucher/layermesh">Layermesh</a> library to
+  create meshes for Waiwera models, and use them for pre- and
+  post-processing</p>
+</li>
+<li>
+<p>the Waiwera <strong>continuous integration</strong> (CI) pipeline has been
+  transferred from Travis CI to Github Actions</p>
+</li>
+</ul>
+<h2 id="waiwera-121-released">Waiwera 1.2.1 released<a class="headerlink" href="#waiwera-121-released" title="Permanent link">&para;</a></h2>
+<p><strong>20 July 2020</strong> - Waiwera version 1.2.1 is now released.</p>
+<p>The main change in this version is that the installation process will
+now install <a href="https://www.mpich.org/">MPICH</a> instead of
+<a href="https://www.open-mpi.org/">OpenMPI</a>, if it does not detect any
+existing MPI on the system.</p>
+<p>This change was prompted by an apparent memory leak (possibly <a href="https://github.com/open-mpi/ompi/issues/4567">this
+one</a>) in some versions
+of OpenMPI, including version 3.1.3 which was used in the Waiwera 1.2
+Docker image.</p>
+<p>That version of OpenMPI also has <a href="https://github.com/open-mpi/ompi/issues/4948">another
+bug</a> which causes error
+messages when running in Docker containers. Waiwera 1.2 introduced a
+workaround for this bug in the <code>waiwera-dkr</code> script, but with the
+change to MPICH this is no longer needed, and has now been removed.</p>
+<h2 id="waiwera-12-released">Waiwera 1.2 released<a class="headerlink" href="#waiwera-12-released" title="Permanent link">&para;</a></h2>
+<p><strong>8 June 2020</strong> - Waiwera version 1.2 is now released.</p>
+<p>The changes in this version include:</p>
+<ul>
+<li>
+<p><strong>PETSc update</strong>: PETSc version 3.13.2 or later is now required, and
+    PETSc 3.13.2 will be downloaded and built if PETSc is not found on
+    the system.</p>
+</li>
+<li>
+<p>this new version of PETSc includes substantial modifications to the
+    DMPlex class, including the ability to handle <strong>hybrid meshes</strong>
+    with arbitrary mixes of cell types (8-node hexahedron, 6-node
+    wedge, etc.). This means Waiwera is also now able to handle these
+    meshes.</p>
+</li>
+<li>
+<p>a modification to the behaviour of the <strong>deliverability</strong> source
+  control when a threshold pressure is specified. The deliverability
+  control will now deactivate if the computed flow rate is larger in
+  magnitude than the specified production rate (which can happen for
+  time-dependent specified flow rates).</p>
+</li>
+<li>
+<p>the Waiwera executable now has <code>--version</code> and <code>--help</code> <strong>command
+  line arguments</strong>. Running with no arguments now gives the more
+  common behaviour of printing the help information, rather than
+  prompting for a filename.</p>
+</li>
+<li>
+<p>the Travis continuous integration (<strong>CI</strong>) pipeline now includes the
+  full suite of <strong>benchmark tests</strong> as well as just the unit tests.</p>
+</li>
+<li>
+<p>users can now run the <strong>benchmark tests</strong> via <strong>Docker</strong>, by passing
+  the <code>--docker</code> argument to the benchmark test script.</p>
+</li>
+<li>
+<p>Waiwera Docker images are now based on a <strong>Debian 10</strong> base image
+  (was Debian 9 in previous versions).</p>
+</li>
+<li>
+<p>the <code>waiwera-dkr</code> utility now has <code>--version</code> and revised <code>--help</code>
+  arguments, and its default number of parallel processes is now 1
+  (rather than the maximum available).</p>
+</li>
+</ul>
+<h2 id="waiwera-journal-article-published">Waiwera journal article published<a class="headerlink" href="#waiwera-journal-article-published" title="Permanent link">&para;</a></h2>
+<p>** 23 May 2020<strong> - the journal Computers and Geosciences has just
+   published a <a href="https://doi.org/10.1016/j.cageo.2020.104529">research
+   article</a> titled
+   </strong>"Waiwera: a parallel open-source geothermal flow simulator"**.</p>
+<p>This contains details on why Waiwera was written, the governing
+   equations used, numerical formulation and other implementation
+   details, as well as results from various test problems.</p>
+<h2 id="waiwera-11-released">Waiwera 1.1 released<a class="headerlink" href="#waiwera-11-released" title="Permanent link">&para;</a></h2>
+<p><strong>31 January 2020</strong> - Waiwera version 1.1 is now released. This is a significant update and includes the following changes:</p>
+<ul>
+<li><strong>MINC mesh rebalancing</strong>: after MINC processing, the mesh is
+  redistributed to regain optimal load balancing, and hence better
+  scaling behaviour for large parallel MINC problems. This entailed a
+  substantial rewrite of parts of the Waiwera MINC code.</li>
+<li><strong>PETSc update</strong>: PETSc version 3.12 or later is now required (some
+  of its new features and bugfixes are needed for the MINC mesh
+  rebalancing). If PETSc is not found on the system, version 3.12.3
+  will be downloaded and built.</li>
+<li><strong>PyWaiwera</strong>: this is a new Python library for working with Waiwera
+  simulations. Its source is in the main Waiwera source tree under
+  <code>/utils/pywaiwera</code>, and it can be installed from PyPI using
+  <code>pip</code>. For now, it contains only code related to running Waiwera via
+  Docker, either from Python scripts or from the command line, for
+  which it installs an executable <code>waiwera-dkr</code> script (which replaces
+  the previous <code>waiwera-dkr.py</code> script). In future it is invisaged
+  that other modules will be added to PyWaiwera, for assisting with
+  pre- and post-processing.</li>
+<li>the new <strong><code>waiwera-dkr</code></strong> script includes many improvements and some
+  new features, for example downloading example model input files
+  using the <code>--examples</code> option.</li>
+<li><strong>continuous integration</strong> (CI) using <a href="https://travis-ci.org/">Travis</a>
+  for automated building/testing of Waiwera.</li>
+<li>additional <strong>log file</strong> messages for reporting simulation degrees of
+  freedom and imbalance statistics, as well as linear solver iteration
+  counts</li>
+</ul>
+<h2 id="waiwera-10-released">Waiwera 1.0 released<a class="headerlink" href="#waiwera-10-released" title="Permanent link">&para;</a></h2>
+<p><strong>24 November 2019</strong> - Waiwera version 1.0 has just been released, after five years of development and testing.</p>
+<p>The Waiwera team would like to thank everyone who contributed to making this possible, including <a href="https://www.mbie.govt.nz/">MBIE</a> and <a href="https://contact.co.nz/">Contact Energy</a> for financial support; Matt Knepley and others on the <a href="https://www.mcs.anl.gov/petsc/">PETSc</a> team, for invaluable advice and support; and <a href="https://github.com/josephalevin">Joseph Levin</a> for developing the <a href="https://github.com/josephalevin/fson">FSON</a> library.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/waiwera/waiwera" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>
