@@ -5,7 +5,7 @@ theme:
   favicon: 'img/waiwera.ico'
 extra:
   social:
-    - type: 'github'
+    - icon: fontawesome/brands/github-alt
       link: 'https://github.com/waiwera/waiwera'
 
 nav:
