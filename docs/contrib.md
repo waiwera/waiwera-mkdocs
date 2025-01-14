@@ -6,7 +6,9 @@ Because Waiwera is released under a free, open-source
 Waiwera's source code is written in Fortran 2003, so you will need to
 be familiar with that in order to contribute. You will also need to
 know how to use the [Git](https://git-scm.com/) version control
-system.
+system. Depending on which parts of the code you want to work on, you
+may also need some familiarity with the
+[PETSc](https://petsc.org/release/) library.
 
 ## Pull requests
 

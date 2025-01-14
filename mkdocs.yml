@@ -3,6 +3,9 @@ theme:
   name: 'material'
   logo: 'img/waiwera_logo_square.png'
   favicon: 'img/waiwera.ico'
+  palette:
+    scheme: slate
+
 extra:
   social:
     - icon: fontawesome/brands/github-alt
@@ -10,7 +13,7 @@ extra:
 
 nav:
   - 'Introduction': 'index.md'
-  - 'News': 'news.md'
+  - 'Releases': 'releases.md'
   - 'User guide': 'userguide.md'
   - 'Installation': 'install.md'
   - 'License': 'license.md'
