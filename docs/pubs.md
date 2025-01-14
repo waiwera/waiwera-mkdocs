@@ -2,6 +2,8 @@
 
 ## Journal articles
 
+- Croucher, A.E., O'Sullivan, M.J. and O'Sullivan, J.P. (2025). *Improved modelling of fluid production and reinjection in geothermal reservoirs*. Computers and Geosciences 196, [https://doi.org/10.1016/j.cageo.2024.105822](https://doi.org/10.1016/j.cageo.2024.105822).
+
 - Croucher, A.E., O'Sullivan, M.J., O'Sullivan, J.P, Yeh, A., Burnell, J. and Kissling, W. (2020). *Waiwera: A parallel open-source geothermal flow simulator*. Computers and Geosciences 141, [https://doi.org/10.1016/j.cageo.2020.104529](https://doi.org/10.1016/j.cageo.2020.104529).
 
 ## Conference papers

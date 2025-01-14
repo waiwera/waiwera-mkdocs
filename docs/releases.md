@@ -7,7 +7,8 @@
 
 - significantly improved non-linear solver convergence and
   time-stepping behaviour when using **source networks** (from
-  modifications to the Jacobian matrix)
+  [modifications](https://doi.org/10.1016/j.cageo.2024.105822) to the
+  Jacobian matrix)
 - improved handling of deliverability **thresholds**
 - new option for reading simulation **start time** (`time.start`) from
   initial conditions HDF5 file
