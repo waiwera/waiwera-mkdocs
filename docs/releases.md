@@ -1,13 +1,13 @@
 # Waiwera releases
 
 ## 1.5.0
-**Date**: 1 August 2024
+**Date**: 14 October 2024
 
 **Changes**:
 
-- improved non-linear solver convergence and time-stepping behaviour
-  when using **source networks** (from modifications to the Jacobian
-  matrix)
+- significantly improved non-linear solver convergence and
+  time-stepping behaviour when using **source networks** (from
+  modifications to the Jacobian matrix)
 - improved handling of deliverability **thresholds**
 - new option for reading simulation **start time** (`time.start`) from
   initial conditions HDF5 file
@@ -21,9 +21,11 @@
 - allow selection of **mesh partitioner** type
 - an error is now raised if progressive scaling is used with a source
   network **group separator**
+- new option for **pressure-dependent cutoff pressure** in
+  deliverability source control -- for simulating e.g. pumps
 - **Docker image** updated to use a Debian 12 base image and Python 3
-- **PETSc update** - PETSc version 3.21.4 or later is now required,
-  and PETSc 3.21.4 will be downloaded and built if PETSc is not found
+- **PETSc update** - PETSc version 3.22.0 or later is now required,
+  and PETSc 3.22.0 will be downloaded and built if PETSc is not found
   on the system (some changes to the Waiwera code were required to
   accommodate changes made to PETSc since version 3.15)
 - revamped **user guide** based on the Shibuya Sphinx theme
@@ -32,7 +34,7 @@
 
 ## 1.4.0
 
-Date: **30 June 2023**
+Date: 30 June 2023
 
 **Changes**:
 
