@@ -1,5 +1,18 @@
 # Waiwera releases
 
+## 1.5.1
+**Date**: 14 April 2025
+
+**Changes**:
+
+- improved behaviour of **salt** equations of state (wse, wsae, wsce)
+  under **dry steam** conditions
+- improved handling of **phase transition failures** for all equations
+  of state
+- added checks on size of **primary variable arrays** in JSON input
+- **PETSc update** - PETSc version 3.22.5 will be downloaded and built
+  if PETSc is not found on the system
+
 ## 1.5.0
 **Date**: 14 October 2024
 
